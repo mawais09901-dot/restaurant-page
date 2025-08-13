@@ -2,6 +2,7 @@ import "./styles.css"
 import { GenerateHomePageContent } from "./modules/Home.js"
 import { GenerateMenuPageContent } from "./modules/Menu.js";
 import { GenerateAboutPageContent } from "./modules/About.js";
+import { GenerateContactPageContent } from "./modules/Contact.js";
 
 GenerateHomePageContent();
 
@@ -13,3 +14,6 @@ menuButton.addEventListener("click", GenerateMenuPageContent);
 
 const aboutButton = document.querySelector(".about-button");
 aboutButton.addEventListener("click", GenerateAboutPageContent)
+
+const contactButton = document.querySelector(".contact-button");
+contactButton.addEventListener("click",GenerateContactPageContent);
