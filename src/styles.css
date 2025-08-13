@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFFFE0;
+    --content-color: #ffedd5;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 1.1rem;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/restaurantBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 30px;
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+header nav button:hover {
+    background-color: var(--primary-color);
+    color: rebeccapurple;
+}
+
+header nav button:active{
+    opacity: 0.7;
+}
+
+#content {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 900px;
+    height: 82vh;
+    color: var(--content-color);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    background-color: #aaa8a88a;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    border-radius: 2px;
+}
+
+#content::-webkit-scrollbar {
+  display: none;
+}
+
+#content span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.main-content p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.main-content h3{
+    margin-top: 20px;
+}
+
+.main-content h2{
+    margin-top: 20px;
+}
+
+ul{
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dec-line{
+    width: 850px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.322);
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+.desserts-heading{
+    font-size: 4rem;
+}
